@@ -1,20 +1,16 @@
 import SupplyDashboard from "@/components/supply-dashboard";
-import {
-  alertFeed,
-  recommendationFeed,
-  supplierHealth,
-  supplyMetrics,
-} from "@/lib/mock-data";
+import DashboardShell from "@/components/dashboard-shell";
+import { alertFeed, recommendationFeed, supplierHealth, supplyMetrics } from "@/lib/mock-data";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <main className="min-h-screen bg-slate-100">
+    <DashboardShell title="Overview" subtitle="End-to-end visibility across sourcing, logistics, and inventory risk.">
       <SupplyDashboard
         metrics={supplyMetrics}
         suppliers={supplierHealth}
         alerts={alertFeed}
         recommendations={recommendationFeed}
       />
-    </main>
+    </DashboardShell>
   );
 }

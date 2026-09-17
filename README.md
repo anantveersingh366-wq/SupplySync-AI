@@ -2,12 +2,20 @@
 
 A startup-ready MVP for an AI-powered supply chain operations and supplier risk platform.
 
+## What is included
+- Supplier risk overview dashboard
+- Inventory monitoring
+- Procurement and order tracking
+- AI insight cards and recommendations
+- Multi-page operational interface
+- Mocked data for a complete demo experience
+
 ## Tech stack
-- Next.js
+- Next.js 14
 - TypeScript
 - Tailwind CSS
 
-## Getting started
+## Run locally
 
 1. Install dependencies:
    ```bash
@@ -19,22 +27,31 @@ A startup-ready MVP for an AI-powered supply chain operations and supplier risk 
    npm run dev
    ```
 
-3. Open http://localhost:3000
+3. Open: http://localhost:3000
 
 ## Project structure
-- `app/` — routing and dashboard page
-- `components/` — UI components
-- `lib/` — mock data and shared logic
-- `app/api/insights/route.ts` — sample API endpoint
+- `app/` — dashboard and page routes
+- `components/` — shared UI blocks
+- `lib/` — mock data and domain information
 
-## Notes
-This is the initial MVP version using mocked data so you can run it immediately. You can later add:
-- authentication
-- a real database
-- CSV import
-- ERP integrations
-- AI recommendation engine
-- deployment to Vercel
+## Deployment notes
+For production launch, use:
+- Vercel for hosting
+- Supabase for authentication and database
+- OpenAI for AI recommendations
 
-## Next phase
-Use Supabase + Vercel for production deployment and OpenAI for intelligent recommendations.
+### Example env configuration
+```env
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_ANON_KEY=
+OPENAI_API_KEY=
+```
+
+## Next steps to make it production-ready
+- add authentication and workspace management
+- connect real supplier and inventory data
+- add CSV upload and ERP imports
+- add AI recommendation API using OpenAI
+- deploy to Vercel and connect Supabase
+
+This repo is ready to run locally as a working MVP demo.

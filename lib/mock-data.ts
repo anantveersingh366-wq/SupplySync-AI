@@ -128,3 +128,22 @@ export const recommendationFeed: Recommendation[] = [
     impact: "Improve on-time delivery to 90%",
   },
 ];
+
+export const inventoryItems = [
+  { sku: "EM-42X", product: "Smart Sensor Module", warehouse: "Dallas", onHand: 182, reorderPoint: 130, status: "Healthy" },
+  { sku: "BT-9A", product: "Battery Pack", warehouse: "Berlin", onHand: 74, reorderPoint: 110, status: "Critical" },
+  { sku: "PC-110", product: "Control Board", warehouse: "Mexico City", onHand: 244, reorderPoint: 180, status: "Healthy" },
+  { sku: "PL-55", product: "Packaging Kit", warehouse: "Shanghai", onHand: 88, reorderPoint: 120, status: "Watch" },
+];
+
+export const orderFeed = [
+  { id: "PO-2031", supplier: "Apex Components", eta: "May 14", value: "$184k", status: "Delayed" },
+  { id: "PO-2045", supplier: "Cascade Materials", eta: "May 17", value: "$92k", status: "In transit" },
+  { id: "PO-2059", supplier: "NorthStar Packaging", eta: "May 20", value: "$67k", status: "On track" },
+];
+
+export const aiInsightCards = [
+  { title: "Lead-time stress", detail: "Mexico-based freight delays are likely to impact 3 SKUs in the next 6 weeks.", score: "82% confidence" },
+  { title: "Alternative sourcing", detail: "Cascade materials can absorb 38% of volume from Apex without SLA violations.", score: "High impact" },
+  { title: "Inventory risk", detail: "Battery pack inventory is below buffer threshold in Berlin and needs replenishment.", score: "Immediate" },
+];
